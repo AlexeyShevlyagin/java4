@@ -1,0 +1,21 @@
+package practic4.Phone;
+
+public class Phone1 {
+    public static void main(String[] args) {
+        Phoneall myphone1 = new Phoneall("nokia", "88005553535" ,100.1);
+        Phoneall myphone2 = new Phoneall("sumsung","8916123456");
+        Phoneall myphone3 = new Phoneall();
+        System.out.println("Phone 1: "+ myphone1.model+" "+myphone1.getNumber() + " " + myphone1.weight);
+        myphone2.weight = 123.4;
+        System.out.println("Phone 2: "+ myphone2.model+" "+myphone2.getNumber() + " " + myphone2.weight);
+        myphone3.model="Apple";
+        myphone3.setNumber("89850987654");
+        myphone3.weight=146.9;
+        System.out.println("Phone 3: "+ myphone3.model+" "+myphone3.getNumber() + " " + myphone3.weight);
+        myphone1.receiveCall("Старуха-Процентщица"+"\n");
+        myphone2.receiveCall("Сонечка"+"\n");
+        myphone3.receiveCall("Раскольников"+"\n");
+        myphone1.receiveCall("88005553535","Старуха-Процентщица");
+        myphone3.receiveCall("89850987654","Раскольников" );
+    }
+}
