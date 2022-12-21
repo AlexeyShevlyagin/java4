@@ -1,0 +1,31 @@
+package practic4.season;
+
+public class season1 {
+    public static void main(String[] args) {
+        season NewSeason = season.SUMMER;
+        System.out.println("Моё любимое время года - "+NewSeason+" "+NewSeason.getDiscription() + " " +NewSeason.getSrtemp());
+        print(season.AUTUMN);
+        printAll();
+    }
+    public static void print(season NewSeason){
+        switch (NewSeason){
+            case AUTUMN:
+                System.out.println("Я люблю осень");
+                break;
+            case SPRING:
+                System.out.println("я люблю весну");
+                break;
+            case SUMMER:
+                System.out.println("я люблю лето");
+                break;
+            case WINTER:
+                System.out.println("я не люблю зиму");
+                break;
+        }
+    }
+    public static void printAll() {
+        for (season A:season.values()){
+            System.out.println(A+" "+A.getSrtemp()+" "+ A.getDiscription());
+        }
+    }
+}
