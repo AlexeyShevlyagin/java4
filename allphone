@@ -1,0 +1,32 @@
+package practic4.Phone;
+
+public class Phoneall {
+    private String number;
+    String model;
+     double weight;
+    public Phoneall(String model, String number, double weight){
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+    }
+    public Phoneall(String model, String number){
+        this.number = number;
+        this.model = model;
+    }
+    public Phoneall (){}
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+    public void receiveCall (String name){
+        System.out.println("ЗВонит "+name);
+    }
+    public void receiveCall (String number,String name){
+        System.out.println("ЗВонит "+name+"\t" + "номер: " + number+"\n");
+    }
+
+}
