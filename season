@@ -1,0 +1,26 @@
+package practic4.season;
+import  java.lang.*;
+public  enum season {
+    WINTER(-20),
+    SUMMER(20) {
+        @Override
+        public String getDiscription() {            return "Тёплое время года";
+        }
+    },
+    SPRING(0),
+    AUTUMN(0);
+
+    private double srtemp;
+    private String seasom_name;
+
+    season(double srtemp) {
+        this.srtemp = srtemp;
+    }
+    public double getSrtemp() {
+        return srtemp;
+    }
+    public String getDiscription(){
+        return "Холодное время года";
+    }
+    
+}
